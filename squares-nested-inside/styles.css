@@ -1,43 +1,30 @@
 * {
 	box-sizing: border-box;
 }
-.square-1 {
-	border: 1px solid green;
-	padding: 5px;
-	margin: 75px;
-	background-color: aqua;
+
+#boxes div {
+	border: 2px solid rgb(144, 0, 116);
+	padding: 19px;
+	background-color: rgb(151, 255, 255);
+}
+#square-1 {
 	width: 200px;
 	height: 200px;
+	margin-top: 20px;
 }
-.square-2 {
-	border: 1px solid green;
-	padding: 5px;
-	margin: 15px;
-	background-color: aqua;
+#square-2 {
 	width: 160px;
 	height: 160px;
 }
-.square-3 {
-	border: 1px solid green;
-	padding: 5px;
-	margin: 15px;
-	background-color: aqua;
+#square-3 {
 	width: 120px;
 	height: 120px;
 }
-.square-4 {
-	border: 1px solid green;
-	padding: 5px;
-	margin: 15px;
-	background-color: aqua;
+#square-4 {
 	width: 80px;
 	height: 80px;
 }
-.square-5 {
-	border: 1px solid green;
-	padding: 5px;
-	margin: 15px;
-	background-color: aqua;
+#square-5 {
 	width: 40px;
 	height: 40px;
 }
