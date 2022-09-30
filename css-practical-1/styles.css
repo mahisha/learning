@@ -1,9 +1,10 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 body {
-    margin: 0px;
-    padding: 40px;
+	margin: 0px;
+	padding: 40px;
+	font-size: 16px;
 }
 
 #puppy {
@@ -13,22 +14,78 @@ body {
 	height: 100%;
 }
 h1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-weight:500;
-    font-size: 60px;
-    margin-top: 40px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-top: 40px;
 }
-#links ul{
-    list-style-type: none;
-    display: inline-flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    margin-bottom: 0px;
+#links {
+	border: 2px solid black;
+	margin-bottom: 0px;
+}
+#links ul {
+	list-style-type: none;
+	display: flex;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.5rem;
+	justify-content: space-around;
+	padding: 0px;
+}
+#links ul a {
+	text-decoration: none;
+}
+#links ul a:hover {
+	text-decoration: underline;
+	color: rgb(129, 126, 126);
+	text-decoration-thickness: 3px;
+}
+
+#links ul li {
+	color: rgb(123, 122, 122);
+	font-weight: bolder;
 }
 #container {
-    display: grid;
-    border: 2px solid black;
+	display: grid;
+	margin-top: 0px;
+	border: 2px solid black;
+	border-top: none;
 
-    
+	grid-template-areas:
+		"article-one article-two article-two article-three"
+		"article-four article-four . aritcle-five "
+		"footer      footer      footer      footer";
+}
+#container h2 {
+	margin: 15px 0px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	font-size: 1.7rem;
+}
+#container p {
+	text-align: justify;
+	margin: 10px 0px;
+}
+.article-1 {
+	grid-area: article-one;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	
+}
+.article-2 {
+	grid-area: article-two;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.article-3 {
+	grid-area: article-three;
+	border-bottom: 2px solid black;
+}
+.article-4 {
+	grid-area: article-four;
+}
+.article-5 {
+	grid-area: article-five;
 }
